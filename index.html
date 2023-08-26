@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+   
+<style>
+
+        #FirstName {
+    margin-left: 100px;}
+    #Street { margin-left: 132px;}
+    #City {margin-left: 140px;}
+    #Biography{ margin-left: 100px;}
+    #Agegroup{margin-left: 100px;}
+    #IMAGE{margin-left: 130px;}
+    #CAR{margin-left: 90px;}
+    #transport{margin-left: 10px;}
+    #Hobbies{margin-left: 110px;
+   }
+     
+</style>
+</head>
+<body>
+    <form action="/action_page.php">
+    <div class="Box" >
+       <fieldset>
+        <legend>Your adress</legend>
+       
+        <label for="FirstName">First Name</label>
+        <input type="text" id="FirstName"><br><br>
+        <label for="FirstName">Last Name</label>
+        <input type="text" id="FirstName"><br><br>
+        <label for="Street">Street</label>
+        <input type="text" id="Street"><br><br>
+        <label for="City">City</label>
+        <input type="text" id="City"><br><br>
+    </fieldset><br>
+    </div>
+    <fieldset>
+        <legend>Additional details</legend>
+    <div class="Details">
+        <label for="Biography">Biography</label>
+        <textarea name="Biography" id="Biography" cols="20" rows="2"></textarea><br><br>
+        <label for="IMAGE">Image</label>
+        <input type="file" id="IMAGE"><br><br>
+        <p>Age Group <select name="Agegroup" id="Agegroup"><option value="Agegroup">0 to 9years</option></select></p>
+    </div>
+</fieldset><br>
+<fieldset>
+    <legend>Interests</legend>
+
+      
+    <div class="Interests" >
+        <label for="Hobbies" >Hobbies</label>
+        <select name="Hobbies" id="Hobbies" size="4">
+            <option value="Soccer">Playing Soccer </option>
+            <option value="">Dancing</option>
+            <option value="">Gardening</option>
+            <option value="">Watching movies </option>
+        </select><br><br>
+        
+       
+        <p>Favourite car? <select name="CAR" id="CAR"><option value="CAR">volvo</option></select></p>
+       <p>Favourite public transport?
+        <select name="transport" id="transport" size="4">
+            <option value="Ground" name="Ground" >Ground </option>
+            <option value="Bus" name="Bus">Train</option>
+            <option value="Ground">Bus </option>
+            <option value="Ground">Water </option>
+       
+        </select></p>
+    </fieldset>
+
+</div>
+
+</form>
+</body>
+</html>
